@@ -55,7 +55,7 @@ Then make sure you have Python installed, and type:
 
 `python3 GLaDOS.py`
 
-#Undoing
+# To Undo
 
 If you have decided you have had enough Aperture terminal, you can do the following to undo everything:
 
