@@ -29,7 +29,11 @@ Now your working directory is the repository! Now, we can get to the customizati
 
 `pbcopy < motd.txt`
 
-This will copy the custom MOTD to your clipboard. Now type this:
+This will copy the custom MOTD to your clipboard. Now navigate back to your home directory:
+
+`cd ~`
+
+And type this:
 
 `sudo nano /etc/motd`
 
@@ -37,18 +41,30 @@ This will put you in the nano text editor terminal, where you will simply Comman
 Now, you just gotta save it! All you gotta do is hold Control+X, and then hit Y, and then enter/return.
 You should now be back in the regular terminal. Close out of the window and reopen the terminal to check that it worked!
 
-Great! Now for the custom prompt! Type:
+Great! Now for the custom prompt! Go back to the repository:
+
+`cd ApertureTerminal`
+
+and copy some more code:
 
 `pbcopy < zshprompt.sh`
 
-Now you should have that pasted! Go back to the nano terminal by typing:
+back to the home directory:
 
-`do nano zshprompt.sh`
+`cd ~`
+
+Go back to the nano terminal by typing:
+
+`sudo nano zshprompt.sh`
 
 Now, you know the drill, just Command+V, and boom! Hit Control+X, Y, and enter/return.
-Now that you are back in the regular terminal, type:
+Now that you are back in the regular terminal, go back to the repo:
 
-`pbcopy < zshrc.txt`
+`cd ApertureTerminal`
+
+and copy some more code:
+
+`pbcopy < zshprompt.sh`
 
 Back to the nano terminal 😁:
 
