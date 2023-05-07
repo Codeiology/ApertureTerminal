@@ -25,7 +25,7 @@ A new folder called ApertureTerminal should appear on your desktop! Now, type th
 
 `cd ApertureTerminal`
 
-Now your working directory is the reopsitory! Now, we can get to the customization, starting with:
+Now your working directory is the repository! Now, we can get to the customization, starting with:
 
 `pbcopy < motd.txt`
 
