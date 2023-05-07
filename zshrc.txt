@@ -1,2 +1,2 @@
-source ~/bashprompt.sh
+source ~/zshprompt.sh
 export TERM=xterm-256color
