@@ -2,7 +2,7 @@
 Customizes your Mac terminal to look like the popular Aperture Science terminal from the Portal series by Steam (if you haven't, go play it!)
 
 # Dependencies
-If you dont already have these installed, they are very easy to get with Homebrew (instructions at https://brew.sh). Its just brew install <name>
+If you dont already have these installed, they are very easy to get with Homebrew (instructions at https://brew.sh). Its just brew install (name) once you have it installed.
  
   git
  
