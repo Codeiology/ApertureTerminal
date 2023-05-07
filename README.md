@@ -5,6 +5,7 @@ Customizes your Mac terminal to look like the popular Aperture Science terminal 
 If you dont already have these installed, they are very easy to get with Homebrew (instructions at https://brew.sh). Its just brew install <name>
  
   git
+ 
   python (version 3 is recommended)
   
 # Hardware/OS requirements
