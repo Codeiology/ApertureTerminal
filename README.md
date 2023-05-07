@@ -4,9 +4,15 @@ Customizes your Mac terminal to look like the popular Aperture Science terminal 
 # Dependencies
 If you dont already have these installed, they are very easy to get with Homebrew (instructions at https://brew.sh). Its just brew install (name) once you have it installed.
  
-  git
+  git `brew install git`
  
-  python (version 3 is recommended)
+  python (version 3 is recommended) `brew install python`
+  
+  pip (comes with python, usually)
+  
+  portaudio (brew install portaudio) `brew install portaudio`
+  
+ built for the newer macOS zsh terminal.
   
 # Hardware/OS requirements
 Really, you just need any type of mac running OSX or later! Its that simple!
