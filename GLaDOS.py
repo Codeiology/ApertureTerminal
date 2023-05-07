@@ -1,7 +1,13 @@
 import time
 import sys
 import subprocess
-import threading
+import requests
+import wave
+install_results = subprocess.run(["pip3","install","pyaudio"], capture_output=True, text=True)
+print(install_results.stdout)
+import pyaudio
+urls = ['https://i1.theportalwiki.net/img/3/34/GLaDOS_chellgladoswakeup01.wav', 'https://i1.theportalwiki.net/img/3/3d/GLaDOS_chellgladoswakeup04.wav', 'https://i1.theportalwiki.net/img/6/67/GLaDOS_chellgladoswakeup05.wav', 'https://i1.theportalwiki.net/img/3/30/GLaDOS_chellgladoswakeup06.wav', 'https://i1.theportalwiki.net/img/d/d6/GLaDOS_wakeup_outro01.wav', 'https://i1.theportalwiki.net/img/0/0c/GLaDOS_wakeup_outro02.wav']
+player = pyaudio.PyAudio()
 endcolor = ("\033[0m")
 red = ("\033[31m")
 redbri = ("\033[31;1m")
@@ -121,29 +127,23 @@ while True:
                         loading_screen("Booting (please keep safe distance)... ")
                         print("")
                         subprocess.run(["clear"])
-                        time.sleep(1.0)
-                        subprocess.run(["say", "-v","Daniel", "powerup", "complete"])
-                        time.sleep(1.5)
-                        subprocess.run(["say", "-v", VOICE, "oh.", "It's", "you."])
-                        type_text("Oh. Its you.")
-                        time.sleep(1.0)
-                        print("")
-                        subprocess.run(["say", "-v", VOICE,"Its", "been", "a", "laung", "time"])
-                        type_text("Its been a long time.")
-                        time.sleep(0.2)
-                        subprocess.run(["say", "-v", VOICE, "How", "have", "you", "been"])
-                        print("")
-                        type_text("How have you been?")
-                        time.sleep(0.5)
-                        subprocess.run(["say", "-v", VOICE, "I've", "been", "really", "busy", "being", "dead."])
-                        print("")
-                        type_text("I've been really busy being dead.")
-                        print("")
-                        time.sleep(1.0)
-                        subprocess.run(["clear"])
-                        subprocess.run(["say", "-v", "Grandma", "you", "know,", "after", "you", "killed", "me"])
-                        type_text("you know. After you killed me.")
-                        subprocess.run(["clear"])
+                        for url in urls:
+                            response = requests.get(url)
+                            with open('sound.wav', 'wb') as f:
+                                f.write(response.content)
+                            with wave.open('sound.wav', 'rb') as wave_file:
+                                stream = player.open(format=player.get_format_from_width(wave_file.getsampwidth()),
+                                                     channels=wave_file.getnchannels(),  
+                                                     rate=wave_file.getframerate(),
+                                                     output=True)
+                                chunk_size = 1024
+                                data = wave_file.readframes(chunk_size)
+                                while data:
+                                    stream.write(data)
+                                    data = wave_file.readframes(chunk_size)
+                                stream.stop_stream()
+                                stream.close()
+                        player.terminate()
                         subprocess.run(["say", "-v", "Cellos", "dum", "dum", "dee", "dum", "dum", "dum", "dum", "dee", "dum", "dum", "dee", "dum", "dum", "dum", "dum", "dee", "dum", "dee", "dum", "dum", "dum", "de", "dum", "dum", "dum", "dee"])
                         sys.exit()
         else:
