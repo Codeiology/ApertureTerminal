@@ -41,7 +41,7 @@ while True:
         print("        GGGGGGGGGGGGG LLLLLLLLLLL                                DDDDDDDDDDDDD             OOOOOOOOO        SSSSSSSSSSSSSSS ")
         print("     GGG::::::::::::G L:::::::::L                                D::::::::::::DDD        OO:::::::::OO    SS:::::::::::::::S ")
         print("   GG:::::::::::::::G L:::::::::L                                D:::::::::::::::DD    OO:::::::::::::OO S:::::SSSSSS::::::S ")
-        print(" G:::::GGGGGGGG::::G LL:::::::LL                                DDD:::::DDDDD:::::D  O:::::::OOO:::::::OS:::::S     SSSSSSS ")
+        print("  G:::::GGGGGGGG::::G LL:::::::LL                                DDD:::::DDDDD:::::D  O:::::::OOO:::::::OS:::::S     SSSSSSS ")
         print(" G:::::G       GGGGGG   L:::::L                  aaaaaaaaaaaaa      D:::::D    D:::::D O::::::O   O::::::OS:::::S ")
         print("G:::::G                 L:::::L                  a::::::::::::a     D:::::D     D:::::DO:::::O     O:::::OS:::::S ")
         print("G:::::G                 L:::::L                  aaaaaaaaa:::::a    D:::::D     D:::::DO:::::O     O:::::O S::::SSSS ")
@@ -164,16 +164,19 @@ while True:
             loading_screen("testing hydraulics... ")
             print("HYDRAULICS READY")
             print("")
+            time.sleep(1.0)
             continue
         elif module == "3":
             print("")
             print(red,"ERROR: UNAVAILABLE",endcolor)
             print("")
+            time.sleep(1.0)
             continue
         elif module == "4":
             print("")
             print(red,"ERROR: ALREADY RUNNING",endcolor)
             print("")
+            time.sleep(1.0)
             continue
         elif module == "5":
             print("")
