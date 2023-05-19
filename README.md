@@ -87,6 +87,11 @@ Then make sure you have Python installed, and type:
 
 `python3 GLaDOS.py`
 
+# Custom Commands
+
+Assuming that you did everything right and the ApertureTerminal file is in your desktop and nowhere else, you should be able to execute some custom commands!
+type `help` to get started!
+
 # To Undo
 
 If you have decided you have had enough Aperture terminal, you can do the following to undo everything:
