@@ -84,17 +84,15 @@ Back to the nano terminal 😁:
 And you know, the regular drill, Hit Command+V, Control+X, Y, then enter/return.
 Now, to test that it works, close the window and reopen it, and you should have a fully fledged Aperture Terminal!
 
-If you want to do the python experience I made included with this repo, type:
+If you want to do the python experience I made included with this repo, make sure you have python installed, the repo is on the desktop, and type:
 
-`cd ~/Desktop/ApertureTerminal`
+`glados`
 
-Then make sure you have Python installed, and type:
-
-`python3 GLaDOS.py`
+Boom! By the way, the code is JAT4736251 ;)
 
 # Custom Commands
 
-Assuming that you did everything right and the ApertureTerminal file is in your desktop and nowhere else, you should be able to execute some custom commands!
+Assuming that you did everything right and the ApertureTerminal file is in your desktop and nowhere else, you should be able to execute some custom commands (like the one above with `glados`)!
 type `help` to get started!
 
 # To Undo
