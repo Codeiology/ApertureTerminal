@@ -15,3 +15,11 @@ function rickroll() {
 function help() {
  cat ~/Desktop/ApertureTerminal/help.txt
 }
+
+function donut() {
+ curl https://ascii.live/donut
+}
+
+function starwars() {
+ nc towel.blinkenlights.nl 23
+}
