@@ -151,43 +151,43 @@ while True:
                                 stream.close()
                         player.terminate()
                         sys.exit()
-        else:
-            print("INCCORECT CODE. ABORTING")
+                else:
+                    print("INCCORECT CODE. ABORTING")
+                    print("")
+                    continue
+        elif module == "2":
+            print("")
+            print("")
+            loading_screen("testing hydraulics... ")
+            print("HYDRAULICS READY")
             print("")
             continue
-    elif module == "2":
-        print("")
-        print("")
-        loading_screen("testing hydraulics... ")
-        print("HYDRAULICS READY")
-        print("")
-        continue
-    elif module == "3":
-        print("")
-        print(red,"ERROR: UNAVAILABLE",endcolor)
-        print("")
-        continue
-    elif module == "4":
-        print("")
-        print(red,"ERROR: ALREADY RUNNING",endcolor)
-        print("")
-        continue
-    elif module == "5":
-        print("")
-        loading_screen("Exiting... ")
-        sys.exit()
-    elif module == "6":
-        print("")
-        clearance = input("Enter a valid clearance code level 5: ")
-        if clearance == "JAT4736251":
-            loading_screen("shutting down GLaDOS... ")
-            print("WARNING: SERVICE DOWN")
+        elif module == "3":
+            print("")
+            print(red,"ERROR: UNAVAILABLE",endcolor)
+            print("")
+            continue
+        elif module == "4":
+            print("")
+            print(red,"ERROR: ALREADY RUNNING",endcolor)
+            print("")
+            continue
+        elif module == "5":
+            print("")
+            loading_screen("Exiting... ")
             sys.exit()
-        else:
+        elif module == "6":
             print("")
-            print("INVALID")
-            continue
-    else:
-        print("")
-        print("INVALID")
-        continue
+            clearance = input("Enter a valid clearance code level 5: ")
+            if clearance == "JAT4736251":
+                loading_screen("shutting down GLaDOS... ")
+                print("WARNING: SERVICE DOWN")
+                sys.exit()
+            else:
+                print("")
+                print("INVALID")
+                continue
+        else:
+             print("")
+             print("INVALID")
+             continue
