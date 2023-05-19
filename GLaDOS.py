@@ -81,76 +81,76 @@ while True:
                 print("")
                 code = input("Please insert initialization code provided by project overseer: ")
                 print("")
-        if code == "JAT4736251":
-            print("accepted!")
-            print("")
-            loading_screen("quitting REACT mode... ")
-            loading_screen("readying personnel and systems... ")
-            loading_screen("Initializing GLaDOS... ")
-            print("")
-            print(green,"Success! Booting is now available.",endcolor)
-            print("")
-            time.sleep(2.0)
-            print("Currently loaded modules:")
-            print("")
-            time.sleep(0.1)
-            print(" 1. Initialize GLaDOS ",green,"running",endcolor)
-            time.sleep(0.1)
-            print(" 2. Test hydraulics ",redbri,"not running",endcolor)
-            time.sleep(0.1)
-            print(" 3. Boot GLaDOS ",greenbri,"ready",endcolor)
-            time.sleep(0.1)
-            print(" 4. Initialize GLaDOS in passive REACT mode",redbri,"not running",endcolor)
-            time.sleep(0.1)
-            print(" 5. Exit program")
-            time.sleep(0.1)
-            print(" 6. Shut down GLaDOS")
-            time.sleep(0.1)
-            print("")
-            postmodule = input("Choose one module: ")
-            if postmodule == "1":
-                print("")
-                print("ERROR: ALREADY RUNNING")
-                continue
-            elif postmodule == "2":
-                print("")
-                loading_screen("testing hydraulics... ")
-                print("HYDRAULICS READY")
-                print("")
-                continue
-            elif postmodule == "3":
-                print("")
-                code = input("Please insert initialization code provided by project overseer: ")
-                print("")
                 if code == "JAT4736251":
-                    print("Please insure all personnell are ready for booting. GLaDOS is experimental AI and could lead to injury or death")
-                    consent = input("are you sure you are ready to boot? (y/n): ")
-                    if consent == "y":
+                    print("accepted!")
+                    print("")
+                    loading_screen("quitting REACT mode... ")
+                    loading_screen("readying personnel and systems... ")
+                    loading_screen("Initializing GLaDOS... ")
+                    print("")
+                    print(green,"Success! Booting is now available.",endcolor)
+                    print("")
+                    time.sleep(2.0)
+                    print("Currently loaded modules:")
+                    print("")
+                    time.sleep(0.1)
+                    print(" 1. Initialize GLaDOS ",green,"running",endcolor)
+                    time.sleep(0.1)
+                    print(" 2. Test hydraulics ",redbri,"not running",endcolor)
+                    time.sleep(0.1)
+                    print(" 3. Boot GLaDOS ",greenbri,"ready",endcolor)
+                    time.sleep(0.1)
+                    print(" 4. Initialize GLaDOS in passive REACT mode",redbri,"not running",endcolor)
+                    time.sleep(0.1)
+                    print(" 5. Exit program")
+                    time.sleep(0.1)
+                    print(" 6. Shut down GLaDOS")
+                    time.sleep(0.1)
+                    print("")
+                    postmodule = input("Choose one module: ")
+                    if postmodule == "1":
                         print("")
-                        loading_screen("readying systems... ")
-                        loading_screen("Booting emotional dampening cores... ")
-                        loading_screen("preparing... ")
-                        loading_screen("Booting (please keep safe distance)... ")
+                        print("ERROR: ALREADY RUNNING")
+                        continue
+                    elif postmodule == "2":
                         print("")
-                        subprocess.run(["clear"])
-                        for url in urls:
-                            response = requests.get(url)
-                            with open('sound.wav', 'wb') as f:
-                                f.write(response.content)
-                            with wave.open('sound.wav', 'rb') as wave_file:
-                                stream = player.open(format=player.get_format_from_width(wave_file.getsampwidth()),
-                                                     channels=wave_file.getnchannels(),  
-                                                     rate=wave_file.getframerate(),
-                                                     output=True)
-                                chunk_size = 1024
-                                data = wave_file.readframes(chunk_size)
-                                while data:
-                                    stream.write(data)
-                                    data = wave_file.readframes(chunk_size)
-                                stream.stop_stream()
-                                stream.close()
-                        player.terminate()
-                        sys.exit()
+                        loading_screen("testing hydraulics... ")
+                        print("HYDRAULICS READY")
+                        print("")
+                        continue
+                    elif postmodule == "3":
+                        print("")
+                        code = input("Please insert initialization code provided by project overseer: ")
+                        print("")
+                        if code == "JAT4736251":
+                            print("Please insure all personnell are ready for booting. GLaDOS is experimental AI and could lead to injury or death")
+                            consent = input("are you sure you are ready to boot? (y/n): ")
+                            if consent == "y":
+                                print("")
+                                loading_screen("readying systems... ")
+                                loading_screen("Booting emotional dampening cores... ")
+                                loading_screen("preparing... ")
+                                loading_screen("Booting (please keep safe distance)... ")
+                                print("")
+                                subprocess.run(["clear"])
+                                for url in urls:
+                                    response = requests.get(url)
+                                    with open('sound.wav', 'wb') as f:
+                                        f.write(response.content)
+                                    with wave.open('sound.wav', 'rb') as wave_file:
+                                        stream = player.open(format=player.get_format_from_width(wave_file.getsampwidth()),
+                                                             channels=wave_file.getnchannels(),  
+                                                             rate=wave_file.getframerate(),
+                                                             output=True)
+                                        chunk_size = 1024
+                                        data = wave_file.readframes(chunk_size)
+                                        while data:
+                                            stream.write(data)
+                                           data = wave_file.readframes(chunk_size)
+                                        stream.stop_stream()
+                                        stream.close()
+                              player.terminate()
+                              sys.exit()
                 else:
                     print("INCCORECT CODE. ABORTING")
                     print("")
