@@ -1,5 +1,5 @@
 <p align="center">
- <img alt="ApertureTerminal" src="https://www.google.com/url?   sa=i&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AAperture_Laboratories_Logo.svg&psig=AOvVaw38CTVPUl-6EEKZVllwZxTt&ust=1684606231146000&source=images&cd=vfe&ved=0CA0QjRxqFwoTCKjzl7b9gf8CFQAAAAAdAAAAABAI" height="140" />
+ <img alt="ApertureTerminal" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Aperture_Laboratories_Logo.svg/1024px-Aperture_Laboratories_Logo.svg.png" height="140" />
 </p>
 Customizes your Mac terminal to look like the popular Aperture Science terminal from the Portal series by Steam (if you haven't, go play it!)
 
