@@ -146,7 +146,7 @@ while True:
                                         data = wave_file.readframes(chunk_size)
                                         while data:
                                             stream.write(data)
-                                           data = wave_file.readframes(chunk_size)
+                                            data = wave_file.readframes(chunk_size)
                                         stream.stop_stream()
                                         stream.close()
                               player.terminate()
