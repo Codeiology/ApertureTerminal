@@ -112,12 +112,14 @@ while True:
                     if postmodule == "1":
                         print("")
                         print("ERROR: ALREADY RUNNING")
+                        time.sleep(0.5)
                         continue
                     elif postmodule == "2":
                         print("")
                         loading_screen("testing hydraulics... ")
                         print("HYDRAULICS READY")
                         print("")
+                        time.sleep(0.5)
                         continue
                     elif postmodule == "3":
                         print("")
