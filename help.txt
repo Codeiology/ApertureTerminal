@@ -1,0 +1,6 @@
+ApertureTerminal Custom commands (automatically implemented):
+
+glados - initialize GLaDOS control program
+help - show this menu
+nyan - Nyan Cat ASCII animation (courtesy of https://ascii.live)
+rick - Rickroll ASCII animation (courtesy of https://ascii.live)
