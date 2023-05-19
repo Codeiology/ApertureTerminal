@@ -4,3 +4,5 @@ glados - initialize GLaDOS control program
 help - show this menu
 nyan - Nyan Cat ASCII animation (courtesy of https://ascii.live)
 rick - Rickroll ASCII animation (courtesy of https://ascii.live)
+starwars - the entire Star Wars: A New Hope in ASCII animation
+donut - donut
