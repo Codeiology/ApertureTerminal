@@ -91,6 +91,7 @@ while True:
                     print(green,"Success! Booting is now available.",endcolor)
                     print("")
                     time.sleep(2.0)
+                    os.system("clear")
                     print("Currently loaded modules:")
                     print("")
                     time.sleep(0.1)
