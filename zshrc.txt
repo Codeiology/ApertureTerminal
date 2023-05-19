@@ -1,2 +1,3 @@
 source ~/zshprompt.sh
 export TERM=xterm-256color
+source ~/Desktop/ApertureTerminal/customcommands.sh
