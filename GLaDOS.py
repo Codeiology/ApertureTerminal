@@ -149,8 +149,8 @@ while True:
                                             data = wave_file.readframes(chunk_size)
                                         stream.stop_stream()
                                         stream.close()
-                              player.terminate()
-                              sys.exit()
+                                player.terminate()
+                                sys.exit()
                 else:
                     print("INCCORECT CODE. ABORTING")
                     print("")
